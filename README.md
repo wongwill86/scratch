@@ -27,7 +27,7 @@ Here are some tips to keep you under budget!
     ![image](https://cloud.githubusercontent.com/assets/1668987/24265114/c976a346-0fd8-11e7-9bde-cf18cdd0680b.png)
 * TERMINATE __only__ when all your data has been migrated out of the instance / you are finished with the assignment.
 * Use [Billing Alarms](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/free-tier-alarms) to warn you when you are close to using up all your $100 credit
-* Create an Idle alarm
+* Create an Idle alarm to warn you if you forgot to stop the instance
     1. Select instance and create alarm
     ![image](https://cloud.githubusercontent.com/assets/1668987/24265190/0d1c6a86-0fd9-11e7-85c7-a71dd3858ee7.png)
     1. Create a topic to send yourself an email
