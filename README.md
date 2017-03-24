@@ -18,7 +18,7 @@
 After logging into Jupyter:
 1. Create a new terminal window
     ![image](https://cloud.githubusercontent.com/assets/1668987/24310481/79a4fd4e-10a6-11e7-83c0-d46ebd7ed8ed.png)
-1. Install julia with these commands (you may need to Ctrl+Shift+V) for paste:
+1. Install julia with these commands (you may need to Ctrl+Shift+V for paste):
     ```bash
     $ sudo add-apt-repository ppa:staticfloat/juliareleases
     $ sudo add-apt-repository ppa:staticfloat/julia-deps
