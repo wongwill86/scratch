@@ -14,6 +14,35 @@
       * After launching it may take up to 5 minutes before the Jupyter notebook is ready
 1. Begin Assignment!
 
+## Need to install julia?
+After logging into Jupyter:
+1. Create a new terminal window
+    ![image](https://cloud.githubusercontent.com/assets/1668987/24310481/79a4fd4e-10a6-11e7-83c0-d46ebd7ed8ed.png)
+1. Install julia with these commands (you may need to Ctrl+Shift+V) for paste:
+    ```bash
+    $ sudo add-apt-repository ppa:staticfloat/juliareleases
+    $ sudo add-apt-repository ppa:staticfloat/julia-deps
+    $ sudo apt-get update
+    $ sudo apt-get install julia
+    ````
+1. Downgrade GMP [otherwise Julia throws errors](https://github.com/JuliaLang/julia/issues/12741)
+    ````bash
+    $ sudo apt-get install libgmp3-dev
+    ````
+1. Install IJulia from Julia REPL
+    ````bash
+    $ julia
+    julia> Pkg.add("IJulia")
+    ````
+1. Install TensorFlow from Julia REPL
+    ```bash
+    julia> Pkg.add("TensorFlow")
+    ```
+1. Refresh Jupyter page and create a new Julia notebook!
+    ![image](https://cloud.githubusercontent.com/assets/1668987/24311959/d15d0ab2-10ac-11e7-9787-594a60b3301a.png)
+    
+**NOTE** If you need to use the GPU for Julia, you will have to rebuild tensorflow to support CUDA 7.5 See [Guide](https://github.com/malmaud/TensorFlow.jl#installation)
+
 ## Worried about costs?
 There is __[no way](https://forums.aws.amazon.com/thread.jspa?threadID=58127)__ to automatically limit your costs in AWS.
 
