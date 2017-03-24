@@ -18,6 +18,10 @@
 After logging into Jupyter:
 1. Create a new terminal window
     ![image](https://cloud.githubusercontent.com/assets/1668987/24310481/79a4fd4e-10a6-11e7-83c0-d46ebd7ed8ed.png)
+1. Downgrade GMP [otherwise Julia throws errors](https://github.com/JuliaLang/julia/issues/12741)
+    ````bash
+    $ sudo apt-get install libgmp3-dev
+    ````
 1. Install julia with these commands (you may need to Ctrl+Shift+V for paste):
     ```bash
     $ sudo add-apt-repository ppa:staticfloat/juliareleases
@@ -25,10 +29,7 @@ After logging into Jupyter:
     $ sudo apt-get update
     $ sudo apt-get install julia
     ````
-1. Downgrade GMP [otherwise Julia throws errors](https://github.com/JuliaLang/julia/issues/12741)
-    ````bash
-    $ sudo apt-get install libgmp3-dev
-    ````
+
 1. Install IJulia from Julia REPL
     ````bash
     $ julia
